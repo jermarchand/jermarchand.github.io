@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" dir="ltr">
+
+<head>
+    <title>Exemple</title>
+    <style>
+        span {
+            display: block;
+            line-height: 18.5667px;
+            height: 18.5667px;
+        }
+
+        .term {
+            width: 900px;
+            height: 480px;
+            color: white;
+            font_family: verdana;
+            background-color: black;
+            font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 18.5667px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="term" id="term"></div>
+</body>
+<script>
+    function appendText(line) {
+        var x = document.createElement("SPAN");
+        var t = document.createTextNode(line);
+        x.appendChild(t);
+        document.getElementById('term').appendChild(x);
+
+        var elm = document.getElementById("term");
+        elm.scrollTop = elm.scrollHeight;
+    }
+    function appendLink(line) {
+        var x = document.createElement("a");
+        x.href= line;
+        var t = document.createTextNode(line);
+        x.appendChild(t);
+        document.getElementById('term').appendChild(x);
+
+        var elm = document.getElementById("term");
+        elm.scrollTop = elm.scrollHeight;
+    }
+    
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function main() {
+        appendText("Loading ... "); 
+        appendText(" "); await sleep(3000);
+        appendText("$ whoami ");
+        appendText("Jérôme MARCHAND ");
+        appendText(" "); await sleep(3000);
+        appendText("$ uptime -p ");
+        appendText("up to 40years ");
+        appendText(" "); await sleep(3000);
+        appendText("$ more info.adoc ");
+        appendText("= Hobby ");
+        appendText(" ");
+        appendText("Jeux de sociétés");
+        appendText(" "); await sleep(3000);
+        appendText("$ ls -lrt ");
+        appendText("total 52 ");
+        appendText("drwxr-xr-x 3 jerome jerome 4096 Juillet \u00A02001 Etudes ");
+        appendText("drwxr-xr-x 2 jerome jerome 4096 Mars \u00A0\u00A0\u00A0\u00A02008 ArtesysInt ");
+        appendText("drwxr-xr-x 2 jerome jerome 4096 Novembre 2013 Alten ");
+        appendText("drwxr-xr-x 2 jerome jerome 4096 Juin \u00A0\u00A0\u00A0\u00A02015 iDapps ");
+        appendText("drwxr-xr-x 2 jerome jerome 4096 Decembre 2016 NeoSoft ");
+        appendText("drwxr-xr-x 2 jerome jerome 4096 Avril \u00A0\u00A0\u00A02019 Sentinelo ");
+        appendText(" "); await sleep(3000);
+        appendText("$ more Etudes/ReadMe.adoc ");
+        appendText("= Diplomes  ");
+        appendText(" ");
+        appendText("\u00A0* 1998 - Cancales - Bac STI Génie Electronique ");
+        appendText("\u00A0* 2001 - Vannes   - Maitrise Systemes d Informations et Réseaux ");
+        appendText(" ");
+        appendText("= Contribution ");
+        appendText(" ");
+        appendText("IPv6, Théorie et pratiques 3ème Edition.  ");
+        appendText("Cizault G. (ouvrage collectif) ");
+        appendLink("http://livre.g6.asso.fr/ ");
+        appendText("O Reilly ISBN 2-84177-085-0 ");
+        appendText(" ");
+        appendText(" ");
+        appendText("DHCPv6 Threats ");
+        appendText("draft-prigent-dhcpv6-threats-00 ");
+        appendLink("https://tools.ietf.org/html/draft-prigent-dhcpv6-threats-00 ");
+        appendText(" "); await sleep(3000); 
+        appendText("$ more ArtesysInt/ReadMe.adoc ");
+        appendText("= Descriptions ");
+        appendText(" ");
+        appendText("Editeur de logiciels de GED Technique. ");
+        appendLink("https://www.opidis.com ");
+        appendText(" ");
+        appendText("Clients :  ");
+        appendText(" ");
+        appendText("\u00A0* Total, Elf, Sonatrach, Arkema ");
+        appendText("\u00A0* TransPole, Conseil régional d'île-de-france ");
+        appendText(" ");
+        appendText("= Languages ");
+        appendText(" ");
+        appendText("\u00A0* Java 1.3 + WebObjects ");
+        appendText("\u00A0* C++ + MFC");
+        appendText("\u00A0* VB6 ");
+        appendText(" ");
+        appendText("= Type de projets ");
+        appendText(" ");
+        appendText("\u00A0* Développements Client-Serveur ");
+        appendText("\u00A0* Déploiement France/Int ");
+        appendText("\u00A0* Formations & Support ");
+        appendText(" "); await sleep(3000);
+        appendText("$ more Alten/ReadMe.adoc ");
+        appendText("= Description ");
+        appendText(" ");
+        appendText("ESN, rattaché à l agence de Rennes ");
+        appendLink("https://www.alten.fr/ ");
+        appendText(" ");
+        appendText("Clients: ");
+        appendText(" ");
+        appendText("\u00A0* Alcatel ");
+        appendText("\u00A0* Etiam ");
+        appendText("\u00A0* Alstom ");
+        appendText("\u00A0* BioMerieux ");
+        appendText(" ");
+        appendText("= Languages ");
+        appendText(" ");
+        appendText("\u00A0* Java + Spring ");
+        appendText("\u00A0* GWT ");
+        appendText("\u00A0* XSL/XSLT ");
+        appendText(" ");
+        appendText("= Type de projets ");
+        appendText(" ");
+        appendText("\u00A0* Développements BackEnd ");
+        appendText("\u00A0* Intégrations ");
+        appendText("\u00A0* Formations ");
+        appendText(" "); await sleep(3000);
+        appendText("$ more iDapps/ReadMe.adoc ");
+        appendText("= Description ");
+        appendText(" ");
+        appendText("Editeur d applications Mobile. ");
+        appendLink("https://www.id-apps.fr/ ");
+        appendText(" ");
+        appendText("Clients : ");
+        appendText(" ");
+        appendText("\u00A0* LimberApps ");
+        appendText("\u00A0* BusinessImmo ");
+        appendText("\u00A0* Deveryware ");
+        appendText("\u00A0* Pernod ");
+        appendText("\u00A0* STVA ");
+        appendText(" ");
+        appendText("= Languages ");
+        appendText(" ");
+        appendText("\u00A0* Java + Spring ");
+        appendText("\u00A0* PHP + Symfony ");
+        appendText(" ");
+        appendText("= Type de projets ");
+        appendText(" ");
+        appendText("\u00A0* Développements BackEnd ");
+        appendText("\u00A0* Intégrations ");
+        appendText("\u00A0* Déploiement ");
+        appendText(" "); await sleep(3000); 
+        appendText("$ more NeoSoft/ReadMe.adoc ");
+        appendText("= Description ");
+        appendText(" ");
+        appendText("ESN, rattaché à l agence de Rennes ");
+        appendLink("https://www.neosoft.fr/ ");
+        appendText(" ");
+        appendText("Clients: ");
+        appendText(" ");
+        appendText("\u00A0* PagesJaunes ");
+        appendText(" ");
+        appendText("= Languages ");
+        appendText(" ");
+        appendText("\u00A0* Python ");
+        appendText("\u00A0* Ansible ");
+        appendText(" ");
+        appendText("= Type de projets ");
+        appendText(" ");
+        appendText("\u00A0* Intégrations ");
+        appendText("\u00A0* Déploiement ");
+        appendText(" "); await sleep(3000);
+        appendText("$ more Sentinelo/ReadMe.adoc ");
+        appendText(" ");
+        appendText("Editeur de logiciels SAAS.  ");
+        appendLink("https://www.sentinelo.com/ ");
+        appendText(" ");
+        appendText("Cients:  ");
+        appendText(" ");
+        appendText("\u00A0* Marionnaud ");
+        appendText("\u00A0* Le Conservateur ");
+        appendText(" ");
+        appendText("= Languages ");
+        appendText(" ");
+        appendText("\u00A0* PHP + Symfony ");
+        appendText("\u00A0* NodeJS ");
+        appendText(" ");
+        appendText("= Type de projets ");
+        appendText(" ");
+        appendText("\u00A0* Transformation DevOps ");
+        appendText("\u00A0* Développement BackEnd ");
+        appendText("\u00A0* Supervision + Exploitation  ");
+        appendText(" "); await sleep(3000);
+        appendText("$ mkdir Zenika ");
+        appendText("$ echo 'DevOps, Share and get fun' > Zenika/ReadMe.adoc ");
+        appendText(" ");
+    }
+    main();
+</script>
+
+</html>
