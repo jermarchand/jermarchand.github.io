@@ -5,6 +5,9 @@
 <head>
     <title>Exemple</title>
     <style>
+        a:visited {
+            color: rgb(235, 235, 235);
+        }
         span {
             display: block;
             line-height: 18.5667px;
@@ -69,7 +72,17 @@
         appendText("$ more info.adoc ");
         appendText("= Hobby ");
         appendText(" ");
-        appendText("Jeux de sociétés");
+        appendText("Jeux de sociétés ++++");
+        appendText("Ingress Prime");
+        appendLink("https://www.ingress.com/");
+        appendText(" ");
+        appendText("= Other ");
+        appendText(" ");
+        appendText("GitHub : ");
+        appendLink("https://github.com/Atadilo");
+        appendText(" ");
+        appendText("Twitter : ");
+        appendLink("https://twitter.com/neken13");
         appendText(" "); await sleep(3000);
         appendText("$ ls -lrt ");
         appendText("total 52 ");
@@ -91,7 +104,7 @@
         appendText("IPv6, Théorie et pratiques 3ème Edition.  ");
         appendText("Cizault G. (ouvrage collectif) ");
         appendLink("http://livre.g6.asso.fr/ ");
-        appendText("O Reilly ISBN 2-84177-085-0 ");
+        appendText("O'Reilly ISBN 2-84177-085-0 ");
         appendText(" ");
         appendText(" ");
         appendText("DHCPv6 Threats ");
@@ -124,7 +137,7 @@
         appendText("$ more Alten/ReadMe.adoc ");
         appendText("= Description ");
         appendText(" ");
-        appendText("ESN, rattaché à l agence de Rennes ");
+        appendText("ESN, rattaché à l'agence de Rennes ");
         appendLink("https://www.alten.fr/ ");
         appendText(" ");
         appendText("Clients: ");
