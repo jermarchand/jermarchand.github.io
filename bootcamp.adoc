@@ -1,0 +1,219 @@
+= Prez BootCamp
+
+== Me
+
+Jérôme MARCHAND 
+
+40 ans
+
+
+=== Hobby 
+ 
+https://www.ingress.com/[Ingress Prime] image:https://vignette.wikia.nocookie.net/ingress/images/3/39/Enlightened_alt.png/revision/latest/scale-to-width-down/220?cb=20150816162921[width=50px]
+
+Jeux de sociétés ++++
+
+=== Other 
+ 
+GitHub : 
+
+* https://github.com/Atadilo
+* https://github.com/jermarchand
+ 
+Twitter : 
+
+* https://twitter.com/neken13
+ 
+== Parcours 
+
+* Fin 2001-Juillet -> Etudes/Diplomes
+* Fin 2008-Mars -> Artesys Int 
+* Fin 2013-Novembre -> Alten 
+* Fin 2015-Juin -> iDapps 
+* Fin 2016-Decembre -> NeoSoft 
+* Fin 2019-Avril -> Sentinelo 
+* Au besoin -> Contrib 
+
+
+== Etudes/Diplomes  
+ 
+* Bac STI Génie Electronique 
+* IUT Génie des télécommunications et réseaux
+* Maitrise Systemes d Informations et Réseaux 
+
+=== Publications
+
+*IPv6, Théorie et pratiques 3ème Edition.*
+
+Cizault G. (ouvrage collectif) 
+
+http://livre.g6.asso.fr/ 
+
+---
+
+*DHCPv6 Threats*
+
+draft-prigent-dhcpv6-threats-00 
+
+https://tools.ietf.org/html/draft-prigent-dhcpv6-threats-00 
+
+== Artesys International 
+ 
+Editeur de logiciels de GED Technique. 
+
+https://www.opidis.com 
+ 
+---
+
+*Clients*  
+ 
+* Total, Elf, Sonatrach, Arkema 
+* TransPole, Conseil régional d'île-de-france 
+
+[%notitle] 
+=== Languages
+ 
+*Languages*
+
+* Java 1.3 + WebObjects 
+* C++ + MFC
+* VB6 
+ 
+*Type de projets*
+ 
+* Développements Client-Serveur 
+* Déploiement France/Int 
+* Formations & Support 
+
+== Alten 
+ 
+ESN (à l'agence de Rennes) 
+
+https://www.alten.fr/ 
+ 
+---
+ 
+*Clients*
+ 
+* Alcatel 
+* Etiam 
+* Alstom 
+* BioMerieux 
+ 
+[%notitle] 
+=== Languages
+ 
+*Languages*
+
+* Java + Spring 
+* GWT 
+* XSL/XSLT 
+ 
+*Type de projets*
+ 
+* Développements BackEnd 
+* Intégrations 
+* Formations 
+
+== iDapps 
+ 
+Editeur d applications Mobile. 
+
+https://www.id-apps.fr/ 
+ 
+---
+
+*Clients*
+ 
+* LimberApps 
+* BusinessImmo 
+* Deveryware 
+* Pernod 
+* STVA 
+
+[%notitle] 
+=== Languages
+ 
+*Languages*
+
+* Java + Spring 
+* PHP + Symfony 
+ 
+*Type de projets*
+ 
+* Développements BackEnd 
+* Intégrations 
+* Déploiement 
+
+== NeoSoft 
+ 
+ESN (à l agence de Rennes)
+
+https://www.neosoft.fr/ 
+
+---
+
+*Clients* 
+ 
+* PagesJaunes 
+
+[%notitle]
+=== Languages
+
+*Languages*
+
+* Python 
+* Ansible 
+ 
+*Type de projets*
+ 
+* Intégrations 
+* Déploiement 
+
+== Sentinelo 
+ 
+Editeur de logiciels SAAS.  
+
+https://www.sentinelo.com/ 
+
+---
+
+*Cients*
+ 
+* Marionnaud 
+* Le Conservateur 
+
+[%notitle] 
+=== Languages
+ 
+*Languages*
+
+* PHP + Symfony 
+* NodeJS 
+ 
+*Type de projets*
+ 
+* Transformation DevOps 
+* Développement BackEnd 
+* Supervision + Exploitation  
+
+== Communautaire 
+ 
+=== Speaker
+ 
+* Keycloak Le maître des clés 
+https://www.youtube.com/watch?v=i94gJ4-tvfU 
+ 
+* Sécurisez vos applications avec Keycloak 
+* Guzzle pour PHP
+ 
+=== Contribution
+ 
+https://github.com/jermarchand/asciidoctor-plantuml.js
+ 
+https://github.com/Atadilo/terraform-inventory
+
+== Zenika 
+
+DevOps, Share and get fun 
+ 
