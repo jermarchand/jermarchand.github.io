@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function calculeer() {
+            pu = document.getElementById("pu").value;
+            qt = document.getElementById("qt").value;
+
+            total = pu * qt;
+
+            if (total > 50000)
+                total = total * ( 1 - 0.15);
+            else if (total > 10000)
+                total = total * ( 1 - 0.1);
+            else if (total > 7000)
+                total = total * ( 1 - 0.07);
+            else if (total > 5000)
+                total = total * ( 1 - 0.05);
+            else if (total > 1000)
+                total = total * ( 1 - 0.03);
+
+            // CA
+            taxe = 1.0825;
+            if(document.getElementById("taxe").selectedIndex == 1)    
+                // TX
+                taxe = 1.0625;
+            if(document.getElementById("taxe").selectedIndex == 2)    
+                // NV
+                taxe = 1.08;
+                
+            if(document.getElementById("taxe").selectedIndex == 3)    
+                // UT
+                taxe = 1.0685;
+            if(document.getElementById("taxe").selectedIndex == 4)    
+                // AL
+                taxe = 1.04;
+
+            total =  total * taxe;
+
+            alert("$" + total );
+        }
+    </script>
+    <body>
+        PU : <input id="pu" type="number"> <br />
+        Quantité : <input type="number" id= "qt" value="1"> <br />
+        
+
+        <select name="taxe" id="taxe">
+                <option value="ca">CA</option>
+                <option value="tx">TX</option>
+                <option value="nv">NV</option>
+                <option value="nv">UT</option>
+                <option value="nv">AL</option>
+              </select> 
+        <button onclick="calculeer();">Calculer</button>
+    </body>
+</html>
